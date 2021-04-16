@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="upper">
+        <h2>Simple, traffic-based pricing</h2>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+
+      <div class="contenido">
+        <div class="info">
+          <div class="cambios">
+            <p><span id="cantidad">100 K </span>PAGEVIEWS</p>
+            <p><span id="precio">16.00</span>$/month</p>
+          </div>
+          <input type="range" class="styled-slider slider-progress" id="deslizar" min="0" max="4" onchange=CambioPrecio()>
+        <div class="extra">Monthly Billing 
+          <label class="switch desactivado">
+          <input type="checkbox" onclick=DescuentoAplicable() id="Off" class="BotonCambiar">
+          <span class="slider round"></span>
+        </label>
+          Yearly Billing <span class="descuento">25% discount</span>
+        </div>
+        </div>
+        <div class="down">
+          <ul>
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+
+          <input type="submit" value="Start my trial">
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
